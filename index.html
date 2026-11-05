@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AI Robot Kiosk</title>
+
+<style>
+body{
+    font-family:Arial;
+    background:#0B2447;
+    color:white;
+    text-align:center;
+    margin:0;
+    padding:20px;
+}
+
+h1{
+    font-size:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    max-width:800px;
+    margin:auto;
+}
+
+.btn{
+    padding:40px;
+    font-size:28px;
+    border:none;
+    border-radius:20px;
+    color:white;
+    cursor:pointer;
+}
+
+.ask{background:#00A86B;}
+.idea{background:#845EF7;}
+.explore{background:#FF922B;}
+.about{background:#339AF0;}
+</style>
+</head>
+
+<body>
+
+<h1>Hello! 👋</h1>
+<p>How can I help you today?</p>
+
+<div class="grid">
+    <button class="btn ask" onclick="alert('Open AI Chat')">
+        Ask AI
+    </button>
+
+    <button class="btn explore" onclick="alert('View Products')">
+        Explore
+    </button>
+
+    <button class="btn idea" onclick="alert('Submit Idea')">
+        Submit Idea
+    </button>
+
+    <button class="btn about" onclick="alert('About Us')">
+        About
+    </button>
+</div>
+
+</body>
+</html>
