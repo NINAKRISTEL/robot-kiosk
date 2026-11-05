@@ -2,12 +2,15 @@
     Ask AI
 </button>
 
-<script>
-function openCopilot() {
-    window.open(
-        'https://copilot.microsoft.com',
-        'CopilotWindow',
-        'width=1200,height=800,resizable=yes,scrollbars=yes'
-    );
-}
-</script>
+<div id="copilotModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCopilot()">&times;</span>
+
+        <iframe
+            src="https://copilot.microsoft.com"
+            width="100%"
+            height="100%"
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
